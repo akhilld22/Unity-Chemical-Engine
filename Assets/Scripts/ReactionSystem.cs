@@ -522,7 +522,8 @@ public class ReactionSystem : MonoBehaviour
     void Explode(reactionInfo ri)
     {
         //exp
-        GameObject exp = Instantiate((GameObject)Resources.Load("Explode"));
+        GameObject.Find("tubeBreakAHA").GetComponent<UCE.TubeExplode>().Explode();
+        GameObject exp = Instantiate((GameObject)Resources.Load("Explode"), gameObject.transform.position, gameObject.transform.rotation);
         exp.GetComponent<AudioSource>().Play();
         //react all
         float minAmount = 100;
@@ -538,6 +539,8 @@ public class ReactionSystem : MonoBehaviour
         {
             substance[sir.name].amount[(int)sir.type] += minAmount * sir.rate;
         }
+        ri.phenomenon = null;
+        Destroy(this);
         return;
     }
 

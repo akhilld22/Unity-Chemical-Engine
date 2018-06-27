@@ -17,7 +17,7 @@
             Explode();
         }
 
-        void Explode()
+        public void Explode()
         {
             tube.SetActive(false);
             for (int i = 1; i < explosionNumber + 1; i++)

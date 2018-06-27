@@ -90,7 +90,7 @@ Shader "Custom/Glass" {
 		bump = normalize(half3(dot(i.TtoW0.xyz, bump), dot(i.TtoW1.xyz, bump), dot(i.TtoW2.xyz, bump)));
 		fixed3 reflDir = reflect(-worldViewDir, bump);
 		fixed4 texColor = tex2D(_MainTex, i.uv.xy);
-		fixed3 reflCol = texCUBE(_Cubemap, reflDir).rgb * texColor.rgb * _GlassColor;
+		fixed3 reflCol = texCUBE(_Cubemap, reflDir).rgb * texColor.rgb;// *_GlassColor;
 
 		fixed3 finalColor = reflCol * (1 - _RefractAmount) + refrCol * _RefractAmount;
 

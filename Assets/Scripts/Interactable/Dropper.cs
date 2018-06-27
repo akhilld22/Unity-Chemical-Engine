@@ -12,6 +12,8 @@
         [HideInInspector]
         public bool inBeaker = false;
         [HideInInspector]
+        public bool inDropArea = true;
+        [HideInInspector]
         public GameObject tubeWaterGo;
         [HideInInspector]
         public GameObject beakerWaterGo;
@@ -39,7 +41,7 @@
                 GameObject waterGo = transform.Find("water").gameObject;
                 waterGo.SetActive(false);
                 hasWater = false;
-
+                Debug.Log("hasWater");
                 if (inBeaker)
                 {
                     // The beakerWaterGo has to be set false and then set true again 
@@ -56,6 +58,11 @@
                     snot.ChangeName(newName);
 
                     beakerWaterGo.SetActive(true);
+                }
+                else
+                {
+                    transform.Find("drop").gameObject.SetActive(true);
+                    Debug.Log("drop!");
                 }
             }
         }
