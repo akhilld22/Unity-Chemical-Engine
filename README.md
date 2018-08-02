@@ -2,7 +2,8 @@
 A VR Chemical Reaction & Experiments Simulation Application Developed by Unity3D
 
 ## How to Play
-1. Download the application from [here](http://www.google.com) and extract the files. 
+1. If you have HTC valve, download the application from [here](http://www.google.com) and extract the files. The scene does not contain any fluid due the the package we used is not compatible with VR scene.
+   If not, download the application from [here](www.google.com) instead. 
 
 2. There are 2 executable files with different contents, which will be introduced later.
 
@@ -25,4 +26,3 @@ This engine support multiple reactions and single experiment with detailed instr
 We implement the experiment which we heat KMnO4 to create O2.
 
 * `The details can be viewed clearly in the video`
-  
