@@ -9,6 +9,10 @@ A VR Chemical Reaction & Experiments Simulation Application Developed by Unity3D
 
 3. If you have HTC valve, open the game with your steam VR. If not, just run it directly on your PC and use the simulator inside the game. Detailed controlling mappings are intruduced in the game.
 
+## Preview
+Part of the reactions we support and the experient can be viewed from the [video](http://www.google.com). Some screenshots are as followed:
+
+
 ## What can the engine do
 This engine support multiple reactions and single experiment with detailed instructions. Besides, the engine has good scalability because all the reactants and reactions are configured in an xml file. All the reacting information (quantity, reactant name, reactions, etc.) will be displayed. 
 
