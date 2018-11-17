@@ -1,16 +1,37 @@
 # Unity Chemical Engine
 A VR Chemical Reaction & Experiments Simulation Application Developed by Unity3D
 
-## How to Play
-1. If you have HTC valve, download the application from [here](http://www.google.com) and extract the files. The scene does not contain any fluid due the the package we used is not compatible with VR scene.
-   If not, download the application from [here](www.google.com) instead. 
-
-2. There are 2 executable files with different contents, which will be introduced later.
-
-3. If you have HTC valve, open the game with your steam VR. If not, just run it directly on your PC and use the simulator inside the game. Detailed controlling mappings are intruduced in the game.
+## Introduction
+The chemical simulation system consists of 2 parts, the engine and a virtual chemical lab. The engine is based on simplified chemical reaction principle, which could analysis and simulate real-time chemical reactions within one reaction system. The lab is built with Unity3D, where user could conduct a virtual experiment like producing Oxygen with heated KMnO4 through HoloLens.
 
 ## Preview
-Part of the reactions we support and the experient can be viewed from the [video](http://www.google.com). Some screenshots are as followed:
+Part of the reactions we support and the experient can be viewed from the [video](https://github.com/zrdumped/Unity-Chemical-Engine/releases/download/v1.0/demo.mp4). Some screenshots are as followed:
+(Yes, we did miswrite a character in our project)
+* Use a  Thermometer
+<p align="center">
+    <img src="https://github.com/zrdumped/Unity-Chemical-Engine/blob/master/ReadmeImage/2.png" alt="Sample"  width="575" height="384">
+</p>
+* Strike a Match
+<p align="center">
+    <img src="https://github.com/zrdumped/Unity-Chemical-Engine/blob/master/ReadmeImage/3.png" alt="Sample"  width="575" height="384">
+</p>
+* Fetch the substances with spoon and test tube
+<p align="center">
+    <img src="https://github.com/zrdumped/Unity-Chemical-Engine/blob/master/ReadmeImage/4.png" alt="Sample"  width="575" height="384">
+</p>
+* Prodce Oxygen (Implemented with Fluid)
+<p align="center">
+    <img src="https://github.com/zrdumped/Unity-Chemical-Engine/blob/master/ReadmeImage/5.png" alt="Sample"  width="683" height="384">
+</p>
+* Many other reactions
+<p align="center">
+    <img src="https://github.com/zrdumped/Unity-Chemical-Engine/blob/master/ReadmeImage/7.png" alt="Sample"  width="606" height="242">
+</p>
+* Burn the Lab
+<p align="center">
+    <img src="https://github.com/zrdumped/Unity-Chemical-Engine/blob/master/ReadmeImage/6.png" alt="Sample"  width="575" height="384">
+</p>
+
 
 
 ## What can the engine do
@@ -22,6 +43,9 @@ This engine support multiple reactions and single experiment with detailed instr
  
 2. NO2 <-> N2O4
   The color of the system wiil change due to pressure of the system, which can be adjusted by the user.
+<p align="center">
+    <img src="https://github.com/zrdumped/Unity-Chemical-Engine/blob/master/ReadmeImage/1.png" alt="Sample"  width="575" height="384">
+</p>
 
 3. Explode
   It is based on 2 complicated organics and H2SO4.
